@@ -193,10 +193,18 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
     private boolean isEmailValid(String email) {
         //TODO: Replace this with your own logic
+        if(email.contains("glauton")){
+            return true;
+        }else
+            return false;
     }
 
     private boolean isPasswordValid(String password) {
         //TODO: Replace this with your own logic
+        if(password.equals("1234")){
+            return true;
+        }else
+            return false;
     }
 
     /**
